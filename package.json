@@ -1,7 +1,7 @@
 {
   "name": "wifi-tracker",
   "productName": "Wifi Tracker",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "An Electron app that quietly collects the name of every wifi network you encounter",
   "main": "main.js",
   "repository": "https://github.com/zeke/wifi-tracker",
