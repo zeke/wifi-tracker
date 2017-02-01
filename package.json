@@ -21,6 +21,8 @@
     "build:package": "electron-packager . --asar.unpack=protocol-link.html --overwrite --platform=darwin --arch=x64 --icon=icon.icns --out=out --osx-sign.identity='Developer ID Application: GitHub'",
     "build:zip": "cd out/wifi-tracker-darwin-x64 && zip -r wifi-tracker-darwin-x64.zip wifi-tracker.app",
     "release": "env-cmd .env publish-release --token $GITHUB_TOKEN --assets out/wifi-tracker-darwin-x64/wifi-tracker-darwin-x64.zip --draft",
+    "publish:major": "np major --no-publish --yolo && release",
+    "publish:minor": "np minor --no-publish --yolo && release",
     "publish:patch": "np patch --no-publish --yolo && release"
   },
   "dependencies": {
